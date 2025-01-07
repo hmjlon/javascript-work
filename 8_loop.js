@@ -34,3 +34,13 @@ for(let i=1 ; i<= mid; i++){
 
 
 
+console.log(star);
+// for ~ in
+let idol = ['장원영','안유진','이서'];
+for(let key in star){
+  console.log(`${key} : ${idol[key]}`);
+}
+// for ~ of 
+for(let value of idol){
+  console.log(value);
+}
