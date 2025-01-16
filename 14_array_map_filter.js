@@ -48,12 +48,35 @@ console.log('짝수: ' + values.filter((x) => (x % 2)===0));
 console.log('3보다 큰 수 :' + values.filter((x) => x > 3));
 
 //3보다 큰 수 찾아서 오름차순 정렬하기 
+let newArr;
+console.log('3보다 큰 수 정렬하기')
+newArr = values.filter((x) => x >3).sort((x,y) => x-y);
+console.log(newArr);
 
 
+//5. findIndex() 함수 
+console.log('find 함수로 값 찾기');
+console.log('장원영은' + iveMembers
+  .findIndex((x) => x === '장원영') + '번째');
 
 
-//5. find() 함수 
+//6. reduce(p,n) 함수 
+//p : previous(이전), next : 다음값, 초기값 
+//문제 :  배열의 합 
 
-//6. reduce() 함수 
+let sumValue = values.reduce((x,y) => x + y);
+
+console.log(sumValue);
+
+
+//문제 :  배열의 최대값
+
+let maxValue = values.reduce((x,y) => Math.max (x + y));
+console.log(maxValue);
+
+//문제 :  배열의 최솟값
+
+let minValue = values.reduce((x,y) => Math.min (x + y));
+console.log(minValue);
 
 
